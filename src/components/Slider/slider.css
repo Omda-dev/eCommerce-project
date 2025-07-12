@@ -1,0 +1,196 @@
+/* السلايد و الخلفية */
+.swiper-slide,
+.slide {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-background {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+/* ألوان الخلفية */
+.slide1 .slide-background {
+  background-color: #eef8da;
+}
+
+.slide2 .slide-background {
+  background-color: #e0f7fa;
+}
+
+.slide3 .slide-background {
+  background-color: #ffe0e0;
+}
+
+/* توزيع المحتوى */
+.slide-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 0 5%;
+}
+
+/* في السلايد 3 نخلي الصورة شمال والنص يمين */
+.slide3-layout {
+  flex-direction: row;
+}
+
+/* النصوص */
+.slide1-text,
+.slide2-text,
+.slide3-text {
+  flex: 1;
+  padding: 20px;
+  color: #333;
+}
+
+.slide1-text p,
+.slide2-text p,
+.slide3-text p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.slide1-text h1,
+.slide2-text h1,
+.slide3-text h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.slide1-text button,
+.slide2-text button,
+.slide3-text button {
+  background-color: #33333300;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.slide1-text button:hover {
+  background-color: #436011;
+  border: #7bf33f;
+  color: white;
+}
+.slide2-text button:hover {
+  background-color: #12376e;
+  border: #70a5f3;
+  color: white;
+}
+.slide3-text button:hover {
+  background-color: #e85b5b;
+  border: #e85b5b;
+  color: aliceblue;
+}
+
+/* الصور */
+.slide1-image,
+.slide2-image,
+.slide3-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/* حجم الصور */
+.slide-img-1 {
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+}
+
+.slide-img-2,
+.slide-img-3 {
+  width: 110%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* ✅ Media Queries */
+
+/* للتابلت */
+@media (max-width: 992px) {
+  .slide-content {
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+  }
+
+  .slide3-layout {
+    flex-direction: column-reverse;
+  }
+
+  .slide1-text,
+  .slide2-text,
+  .slide3-text {
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .slide1-text h1,
+  .slide2-text h1,
+  .slide3-text h1 {
+    font-size: 30px;
+  }
+
+  .slide1-text p,
+  .slide2-text p,
+  .slide3-text p {
+    font-size: 16px;
+  }
+
+  .slide1-image,
+  .slide2-image,
+  .slide3-image {
+    margin-bottom: 20px;
+  }
+
+  .slide-img-1,
+  .slide-img-2,
+  .slide-img-3 {
+    width: 80%;
+  }
+}
+
+/* للموبايل */
+@media (max-width: 576px) {
+  .slide1-text h1,
+  .slide2-text h1,
+  .slide3-text h1 {
+    font-size: 24px;
+  }
+
+  .slide1-text p,
+  .slide2-text p,
+  .slide3-text p {
+    font-size: 14px;
+  }
+
+  .slide1-text button,
+  .slide2-text button,
+  .slide3-text button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .slide-img-1,
+  .slide-img-2,
+  .slide-img-3 {
+    width: 100%;
+  }
+}
