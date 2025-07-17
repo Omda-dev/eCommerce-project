@@ -1,12 +1,42 @@
-# React + Vite
+# 🛋️ Modern Furniture E-Commerce App (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive e-commerce website for selling furniture, built with **React**, **Vite**, and **React Router**.  
+It supports product browsing, filtering by category, product details, cart system, and a login modal.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🏠 Home, Products, and About Us pages
+- 🪑 Browse products from real API
+- 🔎 Filter by category
+- 🛒 Add to Cart with quantity management
+- 📦 Product details page
+- 🔐 Login modal (simulated)
+- 🧾 Modal-based Cart View
+- 🎨 Responsive design (mobile-friendly)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🔐 Demo Login Credentials
+
+Use these to simulate login:
+
+- **Email**: `admin@example.com`  
+- **Password**: `12345678`
+
+---
+
+## 🛠️ Technologies Used
+
+- React + Vite
+- React Router
+- Axios
+- CSS
+- React Icons
+
+---
+
+## 📄 License
+
+Free to use for educational purposes.
