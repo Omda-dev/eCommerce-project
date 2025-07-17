@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import { useState } from 'react';
 import Home from './components/Home/Home';
 import AboutUs from './components/AboutUs/AboutUs';
-import CustomNavbar from './components/NavBar/NavBar';
+import NavBar from './components/NavBar/NavBar';
 import Footer from './components/Footer/Footer';
 import Products from './components/Products/Products';
 import ProductDetails from './components/Products/ProductDetails';
@@ -44,7 +44,7 @@ function App() {
 
   return (
     <>
-      <CustomNavbar
+      <NavBar
         cart={cart}
         isLoggedIn={isLoggedIn}
         openLoginModal={openLoginModal}
