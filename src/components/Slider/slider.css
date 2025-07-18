@@ -1,4 +1,3 @@
-/* السلايد و الخلفية */
 .swiper-slide,
 .slide {
   width: 100%;
@@ -15,7 +14,6 @@
   z-index: 0;
 }
 
-/* ألوان الخلفية */
 .slide1 .slide-background {
   background-color: #eef8da;
 }
@@ -28,7 +26,6 @@
   background-color: #ffe0e0;
 }
 
-/* توزيع المحتوى */
 .slide-content {
   position: relative;
   z-index: 1;
@@ -40,12 +37,10 @@
   padding: 0 5%;
 }
 
-/* في السلايد 3 نخلي الصورة شمال والنص يمين */
 .slide3-layout {
   flex-direction: row;
 }
 
-/* النصوص */
 .slide1-text,
 .slide2-text,
 .slide3-text {
@@ -96,7 +91,6 @@
   color: aliceblue;
 }
 
-/* الصور */
 .slide1-image,
 .slide2-image,
 .slide3-image {
@@ -107,7 +101,6 @@
   height: 100%;
 }
 
-/* حجم الصور */
 .slide-img-1 {
   width: 80%;
   height: auto;
@@ -121,9 +114,7 @@
   object-fit: contain;
 }
 
-/* ✅ Media Queries */
 
-/* للتابلت */
 @media (max-width: 992px) {
   .slide-content {
     flex-direction: column;
@@ -167,7 +158,6 @@
   }
 }
 
-/* للموبايل */
 @media (max-width: 576px) {
   .slide1-text h1,
   .slide2-text h1,

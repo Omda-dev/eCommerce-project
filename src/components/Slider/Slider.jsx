@@ -1,4 +1,3 @@
-import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -7,7 +6,7 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules'
 
 import chair from '../../assets/chair.png'
 import chair2 from '../../assets/chair2.png'
-import chair1 from '../../assets/chair1.png' // ضيف الصورة التالتة
+import chair1 from '../../assets/chair1.png' 
 
 import './slider.css'
 

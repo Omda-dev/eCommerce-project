@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import Slider from "../Slider/Slider";
 import { FaTruck, FaUndoAlt, FaHeadphonesAlt, FaCreditCard } from "react-icons/fa";
@@ -9,9 +10,11 @@ const Home = ({ addToCart }) => {
 
   useEffect(() => {
     axios
-      .get("https://dummyjson.com/products/category/furniture")
+      .get("https://furniture-api.fly.dev/v1/products?limit=100")
       .then((res) => {
-        setProducts(res.data.products.slice(0, 3));
+        if (res.data.success) {
+          setProducts(res.data.data.slice(0, 8)); 
+        }
       })
       .catch((err) => console.error(err));
   }, []);
@@ -40,7 +43,7 @@ const Home = ({ addToCart }) => {
         <div className="feature-card">
           <FaHeadphonesAlt size={30} color="#e91e63" />
           <div>
-            <h4>27/4 Online Support</h4>
+            <h4>24/7 Online Support</h4>
             <p>Customer Support</p>
           </div>
         </div>
@@ -55,22 +58,24 @@ const Home = ({ addToCart }) => {
       </section>
 
       <section className="products-section">
-        <h2>Exclusive Products</h2>
+        <h2 className="products-title">Exclusive Furniture</h2>
 
-        <div className="products-container">
-          {products.map((product) => (
-            <div key={product.id} className="product-card">
-              <img src={product.thumbnail} alt={product.title} />
-              <h3>{product.title}</h3>
-              <p>${product.price}</p>
+        <div className="products-grid">
+          {products.map((p) => (
+            <div className="product-card" key={p.id}>
+              <Link to={`/product/${p.id}`} state={{ product: p }}>
+                <img src={p.image_path} alt={p.name} />
+                <h3>{p.name}</h3>
+                <p className="price">${p.discount_price || p.price}</p>
+              </Link>
               <button
                 className="add-cart-btn"
                 onClick={() =>
                   addToCart({
-                    id: product.id,
-                    name: product.title,
-                    price: product.price,
-                    image_path: product.thumbnail,
+                    id: p.id,
+                    name: p.name,
+                    price: p.discount_price || p.price,
+                    image_path: p.image_path,
                   })
                 }
               >

@@ -64,7 +64,6 @@
   border-radius: 4px;
 }
 
-/* Features Section */
 .features-section {
   display: flex;
   justify-content: space-between;
@@ -104,7 +103,6 @@
   color: #555;
 }
 
-/* Media Queries لل responsiveness */
 
 @media (max-width: 992px) {
   .features-section {

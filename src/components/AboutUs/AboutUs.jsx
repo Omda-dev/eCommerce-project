@@ -1,4 +1,3 @@
-import React from 'react';
 import './AboutUs.css';
 import person1 from '../../assets/person1.jpg';
 import person2 from '../../assets/person2.jpg';

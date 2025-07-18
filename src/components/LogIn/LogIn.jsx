@@ -1,6 +1,4 @@
-// src/components/LogIn/LogIn.jsx
-import React, { useState } from 'react';
-import axios from 'axios';
+import  { useState } from 'react';
 import './login.css';
 
 function LogIn({ onLogin }) {

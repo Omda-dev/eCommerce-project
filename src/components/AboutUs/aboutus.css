@@ -253,7 +253,6 @@
   }
 }
 
-/* أقل من 375px */
 @media (max-width: 375px) {
   .about-left h1 {
     font-size: 20px;
@@ -277,7 +276,6 @@
   }
 }
 
-/* أقل من 320px */
 @media (max-width: 320px) {
   .about-left h1 {
     font-size: 18px;

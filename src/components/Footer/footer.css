@@ -34,13 +34,13 @@
   cursor: pointer;
 }
 
+
 .main-footer {
   background-color: #1d1d1d;
   color: white;
   padding: 20px;
   font-family: "Libre Baskerville", serif;
   font-weight: 700;
-  font-style: normal;
   width: 100%;
 }
 
@@ -95,4 +95,93 @@
 .payments img {
   width: 40px;
   margin-right: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .newsletter h2 {
+    font-size: 20px;
+  }
+
+  .subscribe input {
+    width: 260px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-col {
+    width: 100%;
+  }
+
+  .bottom-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .newsletter h2 {
+    font-size: 18px;
+  }
+
+  .subscribe input {
+    width: 100%;
+  }
+
+  .subscribe button {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .footer-col h4 {
+    font-size: 16px;
+  }
+
+  .footer-col ul li {
+    font-size: 14px;
+  }
+
+  .bottom-footer {
+    font-size: 13px;
+  }
+
+  .payments img {
+    width: 36px;
+  }
+}
+
+@media (max-width: 360px) {
+  .newsletter {
+    padding: 20px 10px;
+  }
+
+  .newsletter h2 {
+    font-size: 16px;
+  }
+
+  .subscribe input,
+  .subscribe button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .footer-col h4 {
+    font-size: 15px;
+  }
+
+  .footer-col ul li {
+    font-size: 13px;
+  }
+
+  .bottom-footer {
+    font-size: 12px;
+  }
+
+  .payments img {
+    width: 32px;
+  }
 }

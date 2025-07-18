@@ -1,10 +1,8 @@
-import React from 'react';
 import './footer.css';
 
 const Footer = () => {
   return (
     <>
-      {/* النشرة البريدية */}
       <div className="newsletter">
         <h2>Subscribe Our Newsletter</h2>
         <div className="subscribe">
@@ -13,7 +11,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* الفوتر الأساسي */}
+      
       <footer className="main-footer">
         {/* <div className="footer-container">
 
