@@ -5,15 +5,6 @@ It supports product browsing, filtering by category, product details, cart syste
 
 ---
 
-## 📸 Screenshots
-
-![Home Page](./src/assets/Screenshot_18-7-2025_20420_localhost.jpeg)  
-![Product Details](./src/assets/Product%20Details.jpeg)  
-![About Page](./src/assets/About.jpeg)  
-![Cart](./src/assets/cart.jpeg)  
-![Login](./src/assets/login.jpeg)
-
----
 
 ## 🚀 Features
 
@@ -50,3 +41,15 @@ Use these to simulate login:
 ## 📄 License
 
 Free to use for educational purposes.
+
+---
+
+## 📸 Screenshots
+
+![Home Page](./src/assets/Screenshot_18-7-2025_20420_localhost.jpeg)  
+![Product Details](./src/assets/Product%20Details.jpeg)  
+![About Page](./src/assets/About.jpeg)  
+![Cart](./src/assets/cart.jpeg)  
+![Login](./src/assets/login.jpeg)
+
+---
